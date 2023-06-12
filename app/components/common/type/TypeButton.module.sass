@@ -1,0 +1,66 @@
+@use './../../../variables.module.scss' as v
+
+@mixin pokeCard($bg:white)
+    width: auto
+    display: inline-block
+    height: 20px
+    padding: 0 15px
+    font-weight: 600
+    font-size: 13px
+    color: v.$secondary-text
+    border-radius: 15px
+    background: $bg
+
+.bug
+    @include pokeCard( $bg:v.$bug )
+
+.dark
+    @include pokeCard( $bg:v.$dark )
+
+.dragon
+    @include pokeCard( $bg:v.$dragon )
+
+.electric
+    @include pokeCard( $bg:v.$electric )
+
+.fairy
+    @include pokeCard( $bg:v.$fairy )
+
+.fighting
+    @include pokeCard( $bg:v.$fighting )
+
+.fire
+    @include pokeCard( $bg:v.$fire )
+
+.flying
+    @include pokeCard( $bg:v.$flying )
+
+.ghost
+    @include pokeCard( $bg:v.$ghost )
+
+.grass
+    @include pokeCard( $bg:v.$grass)
+
+.ground
+    @include pokeCard( $bg:v.$ground)
+
+.ice
+    @include pokeCard( $bg:v.$ice)
+
+.normal
+    @include pokeCard( $bg:v.$normal)
+
+.poison
+    @include pokeCard( $bg:v.$poison)
+
+.psychic
+    @include pokeCard( $bg:v.$psychic)
+
+.rock
+    @include pokeCard( $bg:v.$rock)
+
+.steel
+    @include pokeCard( $bg:v.$steel)
+
+.water
+    @include pokeCard( $bg:v.$water)

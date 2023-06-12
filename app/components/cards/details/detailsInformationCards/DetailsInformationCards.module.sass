@@ -1,0 +1,52 @@
+@use './../../../../variables.module.scss' as v
+.informationContainer
+    width: 60%
+    height: auto
+    border-radius: 16px
+    overflow: auto
+    box-shadow: 0 0 10px 0 rgba(v.$primary, 0.15)
+    background: white
+    article
+        padding: 40px
+        @media screen and (max-width: 1366px)
+            padding: 20px
+
+    @media screen and (max-width: 700px)
+        width: 90%
+        margin: 0 auto
+
+.titleContainer
+    display: flex
+    flex-direction: column
+    gap: 30px
+    h1
+        font-size: 40px
+        color: v.$primary-text
+        text-transform: capitalize
+    @media screen and (max-width: 700px)
+        align-items: center
+    @media screen and (max-width:1366px)
+        transform: scale(0.8)
+.contentContainer
+    display: flex
+    flex-direction: column
+    margin-top: 60px
+    width: 470px
+    gap: 20px
+    h2,p
+        font-size: 20px
+        color: v.$primary-text
+    @media screen and (max-width:1366px)
+        transform: scale(0.8)
+        gap: 10px
+        margin-top: 10px
+    @media screen and (max-width:700px)
+        transform: none
+.itemContent
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+    hr
+    @media screen and (max-width:800px)
+        width: 60%
