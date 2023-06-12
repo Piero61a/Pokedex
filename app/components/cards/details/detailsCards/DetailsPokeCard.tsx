@@ -1,18 +1,18 @@
 import React from 'react';
 import style from './DetailsPokeCard.module.sass';
-import { Sprites } from '@/app/interface/Pokemon';
+import { Pokemon, Sprites } from '@/app/interface/Pokemon';
 
 interface DetailsPokeCardProps {
-  sprites: Sprites;
+  pokemon: Pokemon;
 }
 
-const DetailsPokeCard = ({ sprites }: DetailsPokeCardProps) => {
+const DetailsPokeCard = ({ pokemon }: DetailsPokeCardProps) => {
   return (
     <article className={style.detailsCardContainer}>
-      <img src={sprites?.front_default} alt="bulbasaur" />
+      <img src={pokemon.sprites?.front_default} alt={pokemon.name} />
       <div className={style.miniContainer}>
-        <img src={sprites?.front_default} alt="mini-bulbasaur" />
-        <img src={sprites?.back_default} alt="mini-bulbasaur" />
+        <img src={pokemon.sprites?.front_default} alt={pokemon.name} />
+        <img src={pokemon.sprites?.back_default} alt={pokemon.name} />
       </div>
     </article>
   );

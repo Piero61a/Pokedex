@@ -13,7 +13,7 @@ const Details = ({ pokemon }: DetailsProps) => {
   return (
     <ViewContainer>
       <div className={style.detailsContainer}>
-        <DetailsPokeCard sprites={pokemon?.sprites} />
+        <DetailsPokeCard pokemon={pokemon} />
         <DetailsInformationCards pokemon={pokemon} />
       </div>
     </ViewContainer>
