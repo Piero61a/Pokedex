@@ -23,17 +23,19 @@
 .searchButton
     display: flex
     position: relative
+    box-shadow: 0 5px 5px rgba(v.$primary, 0.15)
+    background: v.$bg-principal-start
+    border-radius: 20px
 
     input
         border-radius: 20px
         height: 40px
         width: 420px
-        border: 1px solid rgba(v.$primary,0.50)
+        border: 1px solid rgba(v.$primary,0.15)
         outline: rgba(v.$primary,0.50)
         font-size: 20px
         padding-left: 20px
         color: v.$primary-text
-        box-shadow: 0 0 10px 0 rgba(v.$primary, 0.15)
         &::placeholder
             color: rgb(v.$primary-text,0.5)
 
