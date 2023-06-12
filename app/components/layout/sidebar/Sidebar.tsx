@@ -41,7 +41,7 @@ const Sidebar = () => {
             />
             <h3>ASHK123</h3>
             <p>Level 1</p>
-            <span>Work hard on your test</span>
+            <span>"Work hard on your test"</span>
           </div>
           <Logout />
         </div>
